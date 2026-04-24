@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Account — Raven</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0d0d0d;
+    color: #e8e4dc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 24px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 56px;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    background: #E87722;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+
+  .logo-text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: #e8e4dc;
+    letter-spacing: -0.3px;
+  }
+
+  .card {
+    background: #161616;
+    border: 0.5px solid #2a2a2a;
+    border-radius: 20px;
+    padding: 48px;
+    max-width: 520px;
+    width: 100%;
+  }
+
+  .warning-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #2a1a1a;
+    border: 0.5px solid #5a2020;
+    border-radius: 100px;
+    padding: 6px 14px;
+    font-size: 12px;
+    color: #E05252;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+
+  .warning-dot {
+    width: 6px;
+    height: 6px;
+    background: #E05252;
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    color: #e8e4dc;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 36px;
+  }
+
+  .divider {
+    height: 0.5px;
+    background: #2a2a2a;
+    margin: 32px 0;
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+
+  .method {
+    background: #1c1c1c;
+    border: 0.5px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+  }
+
+  .method-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .method-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .method-icon.amber { background: #2a1d0a; }
+  .method-icon.blue { background: #0a1a2a; }
+
+  .method-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .method-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #e8e4dc;
+  }
+
+  .method-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    padding-left: 44px;
+  }
+
+  .email-link {
+    color: #E87722;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .email-link:hover { text-decoration: underline; }
+
+  .warning-box {
+    background: #1a1212;
+    border: 0.5px solid #3a2020;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 32px;
+  }
+
+  .warning-box p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.6;
+  }
+
+  .warning-box strong {
+    color: #E05252;
+    font-weight: 500;
+  }
+
+  .footer {
+    margin-top: 40px;
+    font-size: 13px;
+    color: #444;
+    text-align: center;
+  }
+
+  .footer a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .footer a:hover { color: #888; }
+</style>
+</head>
+<body>
+
+<div class="logo">
+  <div class="logo-icon">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+    </svg>
+  </div>
+  <span class="logo-text">Raven</span>
+</div>
+
+<div class="card">
+  <div class="warning-badge">
+    <div class="warning-dot"></div>
+    Permanent action
+  </div>
+
+  <h1>Delete your account</h1>
+  <p class="subtitle">You can delete your Raven account at any time. Once deleted, all your data is permanently removed and cannot be recovered.</p>
+
+  <div class="section-title">How to delete</div>
+
+  <div class="method">
+    <div class="method-header">
+      <div class="method-icon amber">
+        <svg viewBox="0 0 24 24" fill="#E87722" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+        </svg>
+      </div>
+      <span class="method-name">From the app (recommended)</span>
+    </div>
+    <p class="method-desc">Open Raven → Settings → scroll to the bottom → tap <strong style="color:#e8e4dc">Delete Account</strong> → confirm. Your account is deleted immediately.</p>
+  </div>
+
+  <div class="method">
+    <div class="method-header">
+      <div class="method-icon blue">
+        <svg viewBox="0 0 24 24" fill="#4a9edd" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+      </div>
+      <span class="method-name">By email</span>
+    </div>
+    <p class="method-desc">Send a request to <a href="mailto:maiphamtn@hotmail.com" class="email-link">maiphamtn@hotmail.com</a> with the subject "Delete Account" and your registered email address. We'll process it within 7 days.</p>
+  </div>
+
+  <div class="warning-box">
+    <p><strong>What gets deleted:</strong> your profile, progress, XP, word bank, friends list, and all associated data. Subscription cancellation is separate — please cancel through the App Store or Google Play before requesting deletion.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Raven &nbsp;·&nbsp; <a href="mailto:maiphamtn@hotmail.com">Contact</a></p>
+</div>
+
+</body>
+</html>
